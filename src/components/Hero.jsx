@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Data from "../utils/data";
+import Data from "../utils/destination-data";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -36,7 +36,9 @@ const Hero = () => {
                 <div className="carousel-item__text-wrapper">
                   <h1 className="carousel-item__title">{item.title}</h1>
                   <h3 className="carousel-item__desc">{item.desc}</h3>
-                  <button className="carousel-item__button">BOOK NOW</button>
+                  <button className="carousel-item__button button">
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             </div>

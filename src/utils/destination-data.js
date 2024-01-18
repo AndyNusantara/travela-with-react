@@ -1,4 +1,4 @@
-const Data = [
+const destinationData = [
   {
     title: "Santorini",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam nobis inventore hic in facere delectus optio ex quae iste.",
@@ -36,4 +36,4 @@ const Data = [
   },
 ];
 
-export default Data;
+export default destinationData;

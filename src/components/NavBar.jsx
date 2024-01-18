@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div className={navbar ? "navbar changebg" : "navbar"}>
-      <div>
+      <div className="navbar__logo">
         <img src="public/travela.png" alt="logo.png" />
       </div>
       <div
@@ -51,12 +51,13 @@ const NavBar = () => {
           </a>
         </li>
       </div>
-      <div className="navbar__mobile-logo">
-        <img
-          src="/burger-button.svg"
-          alt="burger_button"
-          onClick={onClickButtonHandler}
-        />
+      <div className="navbar__mobile-button">
+        <input type="checkbox" id="checkbox" onClick={onClickButtonHandler} />
+        <label htmlFor="checkbox" className="toggle">
+          <div className="bars" id="bar1"></div>
+          <div className="bars" id="bar2"></div>
+          <div className="bars" id="bar3"></div>
+        </label>
       </div>
     </div>
   );

@@ -1,16 +1,20 @@
 import NavBar from "./NavBar";
 import Hero from "./Hero";
-import Data from "../utils/data";
+import destinationData from "../utils/destination-data";
 import Destinations from "./Destinations";
+import Testimonials from "./Testimonials";
+import testimonialData from "../utils/testimonial-data";
 
 const App = () => {
-  const Datas = Data;
+  const destinationDatas = destinationData;
+  const testimonialDatas = testimonialData;
 
   return (
     <div>
       <NavBar />
       <Hero />
-      <Destinations props={Datas} />
+      <Destinations props={destinationDatas} />
+      <Testimonials props={testimonialDatas} />
     </div>
   );
 };
