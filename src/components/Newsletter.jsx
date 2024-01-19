@@ -17,8 +17,8 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="newsletter">
-      <h1>Subscribe to our newsletter</h1>
+    <div className="newsletter-section">
+      <h1 className="section__title">Subscribe to our newsletter</h1>
       <form onSubmit={formOnSubmitHandler}>
         <input
           type="text"
@@ -35,7 +35,7 @@ const Newsletter = () => {
           placeholder="Your email.."
         />
       </form>
-      <button>SUBSCRIBE</button>
+      <button className="button">SUBSCRIBE</button>
     </div>
   );
 };
